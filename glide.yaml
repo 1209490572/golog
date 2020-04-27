@@ -1,4 +1,4 @@
-package: go.uber.org/zap
+package: github.com/1209490572/golog
 license: MIT
 import:
 - package: go.uber.org/atomic

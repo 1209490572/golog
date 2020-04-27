@@ -19,7 +19,7 @@
 // THE SOFTWARE.
 
 // Package zapgrpc provides a logger that is compatible with grpclog.
-package zapgrpc // import "go.uber.org/zap/zapgrpc"
+package zapgrpc // import "github.com/1209490572/golog/zapgrpc"
 
 import "go.uber.org/zap"
 

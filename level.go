@@ -21,8 +21,8 @@
 package zap
 
 import (
+	"github.com/1209490572/golog/zapcore"
 	"go.uber.org/atomic"
-	"go.uber.org/zap/zapcore"
 )
 
 const (

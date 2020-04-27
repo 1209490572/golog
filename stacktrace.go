@@ -25,10 +25,10 @@ import (
 	"strings"
 	"sync"
 
-	"go.uber.org/zap/internal/bufferpool"
+	"github.com/1209490572/golog/internalbufferpool"
 )
 
-const _zapPackage = "go.uber.org/zap"
+const _zapPackage = "github.com/120940572/golog"
 
 var (
 	_stacktracePool = sync.Pool{

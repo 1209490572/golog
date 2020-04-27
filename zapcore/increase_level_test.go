@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"testing"
 
+	. "github.com/1209490572/golog/zapcore"
+	"github.com/1209490572/golog/zaptest/observer"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	. "go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
 )
 
 func TestIncreaseLevel(t *testing.T) {

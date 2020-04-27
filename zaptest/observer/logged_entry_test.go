@@ -23,8 +23,8 @@ package observer
 import (
 	"testing"
 
+	"github.com/1209490572/golog/zapcore"
 	"go.uber.org/zap"
-	"go.uber.org/zap/zapcore"
 
 	"github.com/stretchr/testify/assert"
 )

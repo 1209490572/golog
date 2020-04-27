@@ -25,9 +25,9 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-
 	"go.uber.org/zap"
-	"go.uber.org/zap/zapcore"
+
+	"github.com/1209490572/golog/zapcore"
 )
 
 // TestJSONEncodeEntry is an more "integrated" test that makes it easier to get

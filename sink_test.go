@@ -30,7 +30,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.uber.org/zap/zapcore"
+	"github.com/1209490572/goog/zapcore"
 )
 
 func TestRegisterSink(t *testing.T) {

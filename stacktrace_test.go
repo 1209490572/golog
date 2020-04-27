@@ -42,18 +42,18 @@ func TestTakeStacktrace(t *testing.T) {
 
 func TestIsZapFrame(t *testing.T) {
 	zapFrames := []string{
-		"go.uber.org/zap.Stack",
-		"go.uber.org/zap.(*SugaredLogger).log",
-		"go.uber.org/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
-		"github.com/uber/tchannel-go/vendor/go.uber.org/zap.Stack",
-		"github.com/uber/tchannel-go/vendor/go.uber.org/zap.(*SugaredLogger).log",
-		"github.com/uber/tchannel-go/vendor/go.uber.org/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
+		"github.com/1209490572/glog.Stack",
+		"github.com/1209490572/golog.(*SugaredLgger).log",
+		"github.com/1209490572/golog/zapcore.(ArrayMarshalerFunc).MarshlLogArray",
+		"github.com/uber/tchannel-go/vendor/github.com/1209490572/glog.Stack",
+		"github.com/uber/tchannel-go/vendor/github.com/1209490572/golog.(*SugaredLgger).log",
+		"github.com/uber/tchannel-go/vendor/github.com/1209490572/golog/zapcore.(ArrayMarshalerFunc).MarshlLogArray",
 	}
 	nonZapFrames := []string{
 		"github.com/uber/tchannel-go.NewChannel",
 		"go.uber.org/not-zap.New",
-		"go.uber.org/zapext.ctx",
-		"go.uber.org/zap_ext/ctx.New",
+		"github.com/1209490572/googext.ctx",
+		"github.com/1209490572/golog_et/ctx.New",
 	}
 
 	t.Run("zap frames", func(t *testing.T) {

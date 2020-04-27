@@ -31,8 +31,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/1209490572/golog/zapcore"
 	"go.uber.org/zap"
-	"go.uber.org/zap/zapcore"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -43,8 +43,8 @@ import (
 // intended to match on the function name, while this is on the full output
 // which includes filenames.
 var _zapPackages = []string{
-	"go.uber.org/zap.",
-	"go.uber.org/zap/zapcore.",
+	"github.com/1209490572/golog.",
+	"github.com/1209490572/golog/zapcore.",
 }
 
 func TestStacktraceFiltersZapLog(t *testing.T) {
@@ -96,7 +96,7 @@ func TestStacktraceFiltersVendorZap(t *testing.T) {
 		zapDir, err := os.Getwd()
 		require.NoError(t, err, "Failed to get current directory")
 
-		testDir := filepath.Join(goPath, "src/go.uber.org/zap_test/")
+		testDir := filepath.Join(goPath, "src/github.com/1209490572/golog_test/")
 		vendorDir := filepath.Join(testDir, "vendor")
 		require.NoError(t, os.MkdirAll(testDir, 0777), "Failed to create source director")
 
@@ -104,7 +104,7 @@ func TestStacktraceFiltersVendorZap(t *testing.T) {
 		setupSymlink(t, curFile, filepath.Join(testDir, curFile))
 
 		// Set up symlinks for zap, and for any test dependencies.
-		setupSymlink(t, zapDir, filepath.Join(vendorDir, "go.uber.org/zap"))
+		setupSymlink(t, zapDir, filepath.Join(vendorDir, "github.com/1209490572/golog"))
 		for _, dep := range deps {
 			setupSymlink(t, dep.Dir, filepath.Join(vendorDir, dep.ImportPath))
 		}

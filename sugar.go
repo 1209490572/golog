@@ -30,7 +30,7 @@ import (
 	"log"
 	"time"
 
-	"go.uber.org/zap/zapcore"
+	"github.com/1209490572/goog/zapcore"
 
 	"github.com/gocql/gocql"
 	"github.com/pkg/errors"

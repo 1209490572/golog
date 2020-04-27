@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/1209490572/golog/zapcore"
 	"github.com/stretchr/testify/assert"
-	"go.uber.org/zap/zapcore"
 )
 
 type username string

@@ -24,7 +24,7 @@ import (
 	"sync"
 	"testing"
 
-	"go.uber.org/zap/internal/exit"
+	"github.com/1209490572/golog/inernal/exit"
 
 	"github.com/stretchr/testify/assert"
 )

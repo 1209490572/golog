@@ -1,5 +1,5 @@
-module go.uber.org/zap
-
+module github.com/1209490572/golog
+module github.com/1209490572/golog
 go 1.13
 
 require (
